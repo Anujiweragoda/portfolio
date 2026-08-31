@@ -35,7 +35,7 @@ export const projects: Project[] = [
     summary: 'Real-time PAC dosage prediction using ML, IoT sensing, and a multi-agent control loop.',
     description:
       'Designed and deployed an intelligent PAC dosing system for Sri Lankan drinking water treatment plants. The system combines sensor-driven data collection, regression-based prediction, and a multi-agent control layer deployed on edge hardware to automate dosage decisions in real time.',
-    image: '/projects/pac-dashboard-1.svg',
+    image: '/projects/Screenshot%202025-11-26%20115914B.png',
     tags: ['Python', 'Random Forest', 'IoT Sensors', 'Raspberry Pi', 'Multi-Agent Systems'],
     links: [
       { label: 'Research', href: '#' },
@@ -206,8 +206,6 @@ export const education: Education[] = [
     detail: 'Graduated with honors · GPA 3.72 / 4.00',
     highlights: [
       'Coursework: Algorithms, Distributed Systems, Machine Learning, Databases, Operating Systems',
-      'Teaching assistant for Data Structures (2 semesters)',
-      "Dean's List, all semesters",
     ],
   },
 ]

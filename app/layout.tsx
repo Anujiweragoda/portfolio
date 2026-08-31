@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   title: 'Anuji Weragoda — Software Engineer',
   description:
     'Portfolio of Anuji Weragoda, a Computer Science graduate and Software Engineer building thoughtful, reliable systems and applied ML.',
-  generator: 'v0.app',
   keywords: [
     'Software Engineer',
     'Junior Software Engineer',
@@ -36,11 +35,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
     apple: '/apple-icon.png',
   },
 }
@@ -64,6 +60,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} bg-background`}
     >
+      <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/icon.svg" type="image/svg+xml" />
+      </head>
       <body className="font-sans antialiased">
         <ThemeProvider
           attribute="class"

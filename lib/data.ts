@@ -43,21 +43,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'atlas',
-    name: 'Atlas Analytics',
-    category: 'Full-stack · Data',
-    year: '2024',
-    summary: 'Real-time product analytics with sub-second query latency.',
+    id: 'job-trace',
+    name: 'JobTrace',
+    category: 'Full-stack · Productivity',
+    year: '2026',
+    summary: 'A job application tracker with CV versioning, reminders, and auto-fill job previews.',
     description:
-      'A self-serve analytics platform that ingests event streams and renders live dashboards. Built a columnar aggregation layer and an incremental query cache to keep p95 dashboard loads under 400ms at millions of events per day.',
-    image: '/projects/atlas-analytics.png',
-    tags: ['TypeScript', 'Next.js', 'PostgreSQL', 'Redis', 'WebSockets'],
+      "Job hunting means tracking dozens of applications across different companies — what stage each one's at, when you applied, when the interview is, which CV version you sent. I was doing this in a messy spreadsheet and kept losing track of things, so I built a simple tool to keep it all in one place. It keeps a list of every job you've applied to with a status (saved, applied, interview, rejected, etc.), lets you save different CV versions and link which one was sent to which job, reminds you about upcoming interviews or follow-ups, and can auto-fill company, role, and description details from a pasted job posting URL. I built the full thing myself — frontend, backend, database, auth (including Google sign-in), and deployment — as a way to actually learn how a full-stack app comes together, not just follow a tutorial. Along the way I ran into real production problems (Prisma breaking on Vercel, a scraping feature failing in serverless, deployment protection blocking my own API) and had to debug and fix each one myself.",
+    image: 'C:\Users\HP\Downloads\software-engineer-portfolio\public\projects\Screenshot 2026-09-07 131330.png',
+    tags: ['TypeScript', 'React', 'Express', 'Prisma', 'PostgreSQL', 'Vercel'],
     links: [
-      { label: 'Case study', href: '#' },
-      { label: 'Source', href: 'https://github.com' },
+      { label: 'Live app', href: 'https://job-trace-psi.vercel.app' },
+      { label: 'Source', href: 'https://github.com/Anujiweragoda/JobTrace' },
     ],
   },
-  {
+  /*{
     id: 'semantic',
     name: 'Semantic Code Search',
     category: 'Developer tools · ML',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       { label: 'Case study', href: '#' },
       { label: 'Source', href: 'https://github.com' },
     ],
-  },
+  },*/
 ]
 
 export type Experience = {

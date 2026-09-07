@@ -35,10 +35,10 @@ export const projects: Project[] = [
     summary: 'Real-time PAC dosage prediction using ML, IoT sensing, and a multi-agent control loop.',
     description:
       'Designed and deployed an intelligent PAC dosing system for Sri Lankan drinking water treatment plants. The system combines sensor-driven data collection, regression-based prediction, and a multi-agent control layer deployed on edge hardware to automate dosage decisions in real time.',
-    image: '/projects/Screenshot%202025-09-07%20182713.png',
+    image: '/projects/Screenshot%202025-11-26%20115914B.png',
     tags: ['Python', 'Random Forest', 'IoT Sensors', 'Raspberry Pi', 'Multi-Agent Systems'],
     links: [
-      { label: 'Research', href: '#' },
+      { label: 'Research', href: '#research' },
       { label: 'Project', href: '#' },
     ],
   },
@@ -157,6 +157,7 @@ export const skillGroups: SkillGroup[] = [
 ]
 
 export type Research = {
+  id: string
   title: string
   venue: string
   year: string
@@ -170,6 +171,7 @@ export type Research = {
 
 export const research: Research[] = [
   {
+    id:"research",
     title: 'AI-Based Poly Aluminium Chloride (PAC) Dosage Determination for Sri Lankan Drinking Water Treatment Plants',
     venue: 'Undergraduate Research Project',
     year: '2025',
